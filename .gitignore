@@ -1,0 +1,22 @@
+# Build output
+/build/
+
+# Embedded DOOM game data — NOT distributed (copyright id Software).
+# Generate locally from your own WAD with tools/reduce_doom.py (see README).
+src/doom/wad_data.c
+
+# Firmware / WAD binaries (contain game data)
+*.bin
+*.bbf
+*.hex
+*.elf
+*.map
+*.wad
+*.o
+*.obj
+
+# Toolchain / dependencies live next to the project, not in it
+/toolchain/
+
+# Extracted music notes (derived game data)
+src/doom/doom_music.h
